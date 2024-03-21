@@ -471,9 +471,16 @@ footer {
     margin-left: 10px;
   }
 
+
+  .footerRight{
+    
+  }
+
   .footerRight ul {
     gap: 20px;
     width: 200px;
+    justify-content: center;
+    
   }
 
   .footerLeft p {

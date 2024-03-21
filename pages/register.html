@@ -4,20 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
 </head>
+
 <body>
 
-    <div class="formContainer">
-        <img src="" alt="">
-        <form action="" class="register">
-            Register
-            <input type="text" placeholder="First Name">
+    <!-- <h1>Create an Account</h1> -->
+    <form id="register" class="register" action="../php/jQFormsAddUser.php" method="POST">
 
-        </form>
-    </div>
+        <div class="name">
+            <input type="text" id="firstName" name="firstName" placeholder="First name" maxlength="45"
+                title="Enter your first name here." required>
 
 
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" required maxlength="45"
+                title="Enter your last name here">
+
+        </div>
+
+        <div class="contact">
+            <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="111-111-1111">
+
+        </div>
+
+        <div class="password">
+            <input type="password" name="password" placeholder="Password" minlength="8" required>
+            <input type="password" name="retype_password" placeholder="Re-type password" minlength="8" required>
+        </div>
+
+
+        <label for="dob">Date of Birth:</label>
+        <div class="dob">
+            <input type="date" id="dob" name="date_of_birth" value="2018-07-22" min="1900-01-01" max="2005-12-31">
+            <input type="text" id="street" name="street" placeholder="Street" required>
+        </div>
+
+        <label for="province">Province:</label>
+
+        <div class="address">
+            <select id="province" name="province" required>
+                <option value="" disabled selected>Select your province</option>
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="YT">Yukon</option>
+            </select>
+            <input type="text" id="city" name="city" placeholder="City" required>
+        </div>
+
+        <button id="submit" class="registerBtn" type="submit">Register</button>
+        <p>Already have an account? <a href="login.html">login</a></p>
+
+    </form>
+
+
+    <script href="../js/register.js"></script>
 </body>
+
 </html>

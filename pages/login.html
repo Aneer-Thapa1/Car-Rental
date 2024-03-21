@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS//login.css">
+    <style>
+        
+    </style>
 </head>
 <body>
-    login
+    <div class="background">
+        <form id="login" action="../php/jQFormsLogin.php method="post">
+            <h3>Login</h3>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email here." required aria-label="Email" aria-required="true">
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="Enter your password here." required aria-label="Password" aria-required="true">
+
+            <button type="submit">Login</button>
+            <p>Not a member yet?</p>
+            <a href="register.html">Register Here.</a>
+        </form>
+    </div>
 </body>
 </html>

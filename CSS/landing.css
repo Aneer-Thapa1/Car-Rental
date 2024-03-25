@@ -147,6 +147,35 @@ nav img {
   margin-left: 30px;
 }
 
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.statsContainer{
+  display: flex;
+  gap: 20px;
+ 
+}
+
+iframe{
+  width: 400px;
+  height: 400px;
+  margin-right: 40px;
+}
+
+.stats{
+  padding: 5px 40px;
+}
+
+.stats:nth-child(2){
+  border-left: 2px solid #00b4d8;
+  border-right: 2px solid #00b4d8;
+}
+
 
 
 .servicesContainer {
@@ -357,6 +386,29 @@ footer {
     padding: 5px 10px;
   }
 
+  .aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  
+  }
+  .statsContainer{
+    flex-wrap: wrap;
+  }
+
+  .stats:nth-child(2){
+    border-left: none;
+    border-right: none;
+
+   
+  }
+
+  iframe{
+    width: 250px;
+    height:250px
+  }
   nav ul li a {
     font-size: 16px;
   }
@@ -394,8 +446,6 @@ footer {
     margin-left: 20px;
   }
 
-
-
   .footerRight ul {
     gap: 20px;
     width: 200px;
@@ -410,16 +460,15 @@ footer {
   }
 }
 
-
 @keyframes widthAnimation {
   0% {
-      width: 0; 
+    width: 0;
   }
   50% {
     width: 100%;
-}
+  }
   100% {
-      width: 0; 
+    width: 0;
   }
 }
 
@@ -447,7 +496,7 @@ footer {
   }
 
   .contactForm h2 {
-  text-align: center;
+    text-align: center;
   }
 
   .contactForm input,
@@ -471,16 +520,13 @@ footer {
     margin-left: 10px;
   }
 
-
-  .footerRight{
-    
+  .footerRight {
   }
 
   .footerRight ul {
     gap: 20px;
     width: 200px;
     justify-content: center;
-    
   }
 
   .footerLeft p {

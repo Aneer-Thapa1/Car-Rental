@@ -72,6 +72,18 @@ a {
   color: #00b4d8;
 }
 
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 @media (max-width: 480px) {
   .name,
   .contact,

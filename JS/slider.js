@@ -1,32 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const items = document.querySelectorAll('.slide .item');
-    const prevBtn = document.querySelector('.button .prev');
-    const nextBtn = document.querySelector('.button .next');
-    let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide .item");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  let currentSlide = 0;
 
-    function showCurrentItem() {
-        items.forEach((item, index) => {
-            if (index === currentIndex) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "block" : "none";
+    });
+  }
 
-    function showNextItem() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showCurrentItem();
-    }
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
 
-    function showPreviousItem() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showCurrentItem();
-    }
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
 
-    prevBtn.addEventListener('click', showPreviousItem);
-    nextBtn.addEventListener('click', showNextItem);
+  // Show the first slide initially
+  showSlide(currentSlide);
 
-    // Show the initial item
-    showCurrentItem();
+  // Set up interval for automatic slide change
+  const slideInterval = setInterval(nextSlide, 5000);
+
+  // Set up event listeners for manual navigation
+  nextButton.addEventListener("click", () => {
+    nextSlide();
+    clearInterval(slideInterval); // Clear interval to prevent conflict with manual navigation
+    setTimeout(() => (slideInterval = setInterval(nextSlide, 5000)), 5000); // Restart interval after manual navigation
+  });
+
+  prevButton.addEventListener("click", () => {
+    prevSlide();
+    clearInterval(slideInterval); // Clear interval to prevent conflict with manual navigation
+    setTimeout(() => (slideInterval = setInterval(nextSlide, 5000)), 5000); // Restart interval after manual navigation
+  });
 });

@@ -2,8 +2,8 @@
 // Database connection settings
 $servername = "localhost";
 $username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "your_database_name"; // Your database name
+$password = "anir2080"; // Your database password
+$dbname = "susi_motors"; // Your database name
 
 // Create a new MySQLi connection
 $conn = new mysqli($servername, $username, $password, $dbname);

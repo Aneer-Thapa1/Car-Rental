@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: fit-content;
+  align-self: center;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background: #357ab8;
+}

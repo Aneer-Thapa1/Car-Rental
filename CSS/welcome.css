@@ -6,115 +6,6 @@
   font-family: "Truculenta", sans-serif;
 }
 
-.responsiveNav {
-  width: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-  background-color: #ffffff;
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.responsiveNav button {
-}
-.responsiveNav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.responsiveNav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.responsiveNav ul li a:hover {
-  color: #00b4d8;
-}
-
-
-nav {
-  background: transparent;
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: space-around;
-  gap: 100px;
-  align-items: center;
-  z-index: 1;
-  padding: 10px 0;
-}
-
-.menu {
-  background: transparent;
-  outline: none;
-  border: none;
-  font-size: 18px;
-  display: none;
-}
-nav ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  position: relative;
-}
-
-nav ul li a:hover {
-  color: #00b4d8;
-  transition: all ease-in-out 0.6s;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background: #00b4d8;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.9s;
-}
-
-nav img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-}
-
-.profile {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.fa-solid {
-  font-size: 22px;
-}
-
-.profile a {
-  color: black;
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-
 .item {
   position: relative;
   width: 100%;
@@ -139,8 +30,6 @@ nav img {
   color: #fff; /* Adjust the text color */
   z-index: 1;
 }
-
-
 
 @keyframes animate {
   from {
@@ -177,135 +66,30 @@ nav img {
   color: #fff;
 }
 
-.name{
+.name {
   font-size: 44px;
   font-weight: 900;
 }
 
-.desc{
+.desc {
   font-size: 24px;
-
 }
 
-.content{
+.content {
   top: 55%;
-  animation:  animate 0.8s 1 ;
+  animation: animate 0.8s 1;
 }
 
-.content button{
-
+.content button {
   width: fit-content;
   background: #00b4d8;
   color: #fff;
   padding: 5px 20px;
   outline: none;
-  border: none;margin-top: 20px;
+  border: none;
+  margin-top: 20px;
   cursor: pointer;
   font-size: 17px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px 0;
-  gap: 90px;
-  background: #00b4d8;
-  align-items: center;
-  color: #fff;
-  margin-top: 50px;
-  width: 100%;
-}
-
-.footerLeft {
-  display: flex;
-  flex-direction: column;
-}
-.footerLeft p {
-  font-size: 22px;
-  margin-top: 20px;
-}
-
-.footerRight {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.footerRight ul {
-  display: flex;
-  gap: 50px;
-  list-style: none;
-  width: 350px;
-  flex-wrap: wrap;
-  font-size: 18px;
-}
-
-.footerUpper ul li {
-  position: relative;
-}
-
-.footerUpper ul li:hover {
-  color: #000000;
-  cursor: pointer;
-}
-
-.footerUpper ul li::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background: #000000;
-}
-
-.footerUpper ul li:hover::after {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.9s;
-}
-
-.footerUpper ul li:hover {
-  color: #000000;
-  cursor: pointer;
-}
-
-.footerLeft img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.footerLower {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-}
-
-.socials p {
-  font-size: 24px;
-}
-
-.icons {
-  margin-top: 30px;
-  display: flex;
-  gap: 30px;
-  font-size: 28px;
-  flex-wrap: wrap;
-}
-
-.icons .fa-brands {
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-.icons .fa-brands:hover {
-  color: #000000;
-  transition: all ease-in-out 0.9s;
 }
 
 .searchBar {
@@ -505,8 +289,6 @@ footer {
     margin-left: 30px;
   }
 
-
-
   .slide .item:nth-child(2) .content {
     top: -15%;
   }
@@ -552,9 +334,8 @@ footer {
 
   .searchBar button {
     height: 38px;
-    font-size: 14px;  
+    font-size: 14px;
     padding: 5px 10px;
-    
   }
 
   .searchBar input {

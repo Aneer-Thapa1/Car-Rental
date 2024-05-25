@@ -9,7 +9,7 @@
 .background {
   width: 800px;
   height: 800px;
-  background-color: #00b4d8;
+  background-color: #4a90e2;
   position: absolute;
   border-radius: 50%;
   top: -500px;
@@ -41,6 +41,16 @@ nav ul {
   list-style: none;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.logo span {
+  color: white;
+}
+
 nav ul li a {
   color: black;
   text-decoration: none;
@@ -49,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00b4d8;
+  color: #4a90e2;
   transition: all ease-in-out 0.6s;
 }
 
@@ -58,7 +68,7 @@ nav ul li a::after {
   width: 0;
   height: 2px;
   position: absolute;
-  background: #00b4d8;
+  background: #4a90e2;
 }
 
 nav ul li a:hover::after {
@@ -85,11 +95,11 @@ nav img {
 }
 
 .signupBtn a {
-  color: #00b4d8;
+  color: #4a90e2;
 }
 
 .loginBtn {
-  background-color: #00b4d8;
+  background-color: #4a90e2;
   border: none;
   font-size: 18px;
   padding: 5px 20px;
@@ -99,17 +109,17 @@ nav img {
 }
 
 .signupBtn {
-  border: 1px solid #00b4d8;
+  border: 1px solid #4a90e2;
   font-size: 18px;
   padding: 5px 20px;
   outline: none;
-  color: #00b4d8;
+  color: #4a90e2;
   cursor: pointer;
 }
 
 .home {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 80vh;
   z-index: 999;
@@ -125,7 +135,7 @@ nav img {
 }
 
 .homeTxt h1 {
-  font-size: 64px;
+  font-size: 84px;
   max-width: 350px;
   font-weight: 900;
 }
@@ -152,31 +162,27 @@ nav img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-
 }
 
-.statsContainer{
+.statsContainer {
   display: flex;
   gap: 20px;
- 
 }
 
-iframe{
+iframe {
   width: 400px;
   height: 400px;
   margin-right: 40px;
 }
 
-.stats{
+.stats {
   padding: 5px 40px;
 }
 
-.stats:nth-child(2){
-  border-left: 2px solid #00b4d8;
-  border-right: 2px solid #00b4d8;
+.stats:nth-child(2) {
+  border-left: 2px solid #4a90e2;
+  border-right: 2px solid #4a90e2;
 }
-
-
 
 .servicesContainer {
   display: flex;
@@ -243,7 +249,7 @@ iframe{
 textarea {
   outline: none;
   border-radius: 8px;
-  border: 1px solid #00b4d8;
+  border: 1px solid #4a90e2;
   width: 300px;
   padding: 5px 20px;
   resize: none;
@@ -254,7 +260,7 @@ textarea {
   width: fit-content;
   padding: 5px 20px;
   margin: auto;
-  background-color: #00b4d8;
+  background-color: #4a90e2;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -266,7 +272,7 @@ footer {
   justify-content: space-around;
   padding: 30px 0;
   gap: 90px;
-  background: #00b4d8;
+  background: #4a90e2;
   align-items: center;
   color: #fff;
   margin-top: 50px;
@@ -392,22 +398,19 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-  
   }
-  .statsContainer{
+  .statsContainer {
     flex-wrap: wrap;
   }
 
-  .stats:nth-child(2){
+  .stats:nth-child(2) {
     border-left: none;
     border-right: none;
-
-   
   }
 
-  iframe{
+  iframe {
     width: 250px;
-    height:250px
+    height: 250px;
   }
   nav ul li a {
     font-size: 16px;

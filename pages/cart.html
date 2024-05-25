@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Car Selling Website</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <header>
+        Your Cart
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="car-image.jpg" alt="Car Image">
+            <div class="cart-item-details">
+                <h2 class="cart-item-title">Car Model Name</h2>
+                <p class="cart-item-price">$25,000</p>
+                <div class="cart-item-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+            </div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <!-- Repeat the .cart-item block for each item in the cart -->
+
+        <div class="cart-total">
+            Total: $25,000
+        </div>
+
+        <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+</body>
+
+</html>

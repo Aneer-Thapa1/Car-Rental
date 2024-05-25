@@ -23,7 +23,7 @@ body {
   width: 180px;
   height: 25px;
   padding: 5px 10px;
-  border: 1px solid #00b4d8;
+  border: 1px solid #4a90e2;
   border-radius: 3px;
   margin-bottom: 15px;
   outline: none;
@@ -38,14 +38,12 @@ body {
   width: fit-content;
   padding: 5px 20px;
   margin: auto;
-  background: #00b4d8;
+  background: #4a90e2;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-
-.login a{
-    color: #00b4d8;
-    
+.login a {
+  color: #4a90e2;
 }

@@ -15,14 +15,13 @@
 
   <div class="responsiveNav">
     <ul>
-        <li><a href="welcome.html">Home</a></li>
-        <li><a href="sellingCars.html">Buy Car</a></li>
-        <li><a href="rentingCars.html">Rent Car</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="">Cart</a></li>
+      <li><a href="welcome.html">Home</a></li>
+      <li><a href="sellingCars.html">Buy Car</a></li>
+      <li><a href="orders.html">View orders</a></li>
+      <li><a href="">Cart</a></li>
     </ul>
 
-</div>
+  </div>
 
   <nav>
 
@@ -39,16 +38,13 @@
 
         <li><a href="welcome.html">Home</a></li>
         <li><a href="sellingCars.html">Buy Car</a></li>
-        <li><a href="rentingCars.html">Rent Car</a></li>
+        <li><a href="orders.html">View orders</a></li>
       </ul>
     </div>
     <div class="profile">
       <i class="fa-solid fa-cart-shopping"></i>
-      <a href="profile.html">
-        <i class="fa-solid fa-user"></i>
-        userName here
-      </a>
 
+      <i class="fa-solid fa-user"></i>
     </div>
   </nav>
 
@@ -312,32 +308,32 @@
 
 
   <script>
- document.addEventListener("DOMContentLoaded", function () {
-            var menuBtn = document.getElementById("menu");
-            var nav = document.querySelector(".responsiveNav");
+    document.addEventListener("DOMContentLoaded", function () {
+      var menuBtn = document.getElementById("menu");
+      var nav = document.querySelector(".responsiveNav");
 
 
-            function toggleNav() {
-                if (nav.style.display === "flex") {
-                    nav.style.display = "none";
-                } else {
-                    nav.style.display = "flex";
-                }
-            }
+      function toggleNav() {
+        if (nav.style.display === "flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "flex";
+        }
+      }
 
-         
-            menuBtn.addEventListener("click", function (event) {
-                event.stopPropagation(); 
-                toggleNav();
-            });
 
-        
-            document.addEventListener("click", function (event) {
-                if (event.target !== nav && event.target !== menuBtn && !nav.contains(event.target)) {
-                    nav.style.display = "none";
-                }
-            });
-        });
+      menuBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        toggleNav();
+      });
+
+
+      document.addEventListener("click", function (event) {
+        if (event.target !== nav && event.target !== menuBtn && !nav.contains(event.target)) {
+          nav.style.display = "none";
+        }
+      });
+    });
 
   </script>
   <script src="../JS/slider.js"></script>
